@@ -1,3 +1,4 @@
 # Refractive-Index
 
-*    python -m pip install requirements.txt     *
+*
+>   from main import Ligth 
