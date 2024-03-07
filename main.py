@@ -72,9 +72,9 @@ class Light:
     
     def M(self):
         
-        m11 = cos( (self.k())*(self.h) )
+        m11 = cos( (self.k())*(self.h()) )
         m12 = ( (self.i)*( sin( (self.k())*(self.h())) ) )/( self.gamma1() )
-        m21 = (self.i)*(self.gamma1)*( sin((self.k())*(self.h())) )
+        m21 = (self.i)*(self.gamma1())*( sin((self.k())*(self.h())) )
         m22 = cos( (self.k())*(self.h()) )
         
         TransPose_Matrix = [
