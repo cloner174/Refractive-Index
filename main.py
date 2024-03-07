@@ -1,15 +1,24 @@
+#
+#                   #       #                         In the name of God                     #      # #
+
 #cloner174
 #cloner174.org@gmail.com
 ##
-from math import *
-import numpy as np
 
+
+#Assuming Just One Layer is involved! -> we call it layer A
 # γ -->>  Gamma
 # ε -->>  Epsilon
 # θ -->>  Theta
 # λ -->>  Lambda
 # μ -->>  Mu
-#Assuming Just One Layer in involve! -> we call it layer A
+
+
+from math import *
+import numpy as np
+
+
+
 class Light:
     
     def __init__(self, landa0: float, landa: float, i: int = None):
@@ -122,17 +131,17 @@ class Light:
         return (head_ / _tail)
     
     
-    def main(self, _run_: bool):
+    def main(self):
         
-        if _run_ == True:
+        R = self.r()
+        T = self.t()
             
-            R = self.r()
-            T = self.t()
+        R_abseloutValuePowerUp_2 = (abs( R ))**(2)
+        T_abseloutValuePowerUp_2 = (abs( T ))**(2)
             
-            R_abseloutValuePowerUp_2 = (abs( R ))**(2)
-            T_abseloutValuePowerUp_2 = (abs( T ))**(2)
-            
-            R_of_Landa = ( self.landa, R_abseloutValuePowerUp_2 )
-            T_of_Landa = ( self.landa, T_abseloutValuePowerUp_2)
+        R_of_Landa = ( self.landa, R_abseloutValuePowerUp_2 )
+        T_of_Landa = ( self.landa, T_abseloutValuePowerUp_2)
         
         return R_of_Landa, T_of_Landa
+    
+#End-!-
