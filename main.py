@@ -21,7 +21,7 @@ import numpy as np
 
 class Light:
     
-    def __init__(self, landa0: float, landa: float, i: int = None):
+    def __init__(self, landa0: float, landa: float, i_: int = None):
         
         self.landa0: landa0
         self.landa = landa
@@ -30,8 +30,8 @@ class Light:
         self.Epsilon0 = (8.85)*((10)**(-12))
         self.Mu = ( 4 )*( pi )*( ( 10 )**( -7 ) )
         
-        if i:
-            self.i = i
+        if i_:
+            self.i = i_
         else:
             self.i = 1
     
