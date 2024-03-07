@@ -45,7 +45,7 @@ for d in range(num+1):                # for all steps +1 !
 reflectance_values = []
 
 for lambda_val in lambda_values:
-    reflectance_values.append(R(lambda_val))
+    reflectance_values.append(R(lambda_val))
 
 
 fig, ax = plt.subplots()
