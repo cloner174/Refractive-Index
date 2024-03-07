@@ -73,7 +73,7 @@ class Light:
     def M(self):
         
         m11 = cos( (self.k())*(self.h) )
-        m12 = ( (self.i)*( sin((self.k())*(self.h())) ) )/( self.gamma1() )
+        m12 = ( (self.i)*( sin( (self.k())*(self.h())) ) )/( self.gamma1() )
         m21 = (self.i)*(self.gamma1)*( sin((self.k())*(self.h())) )
         m22 = cos( (self.k())*(self.h()) )
         
@@ -122,5 +122,17 @@ class Light:
         return (head_ / _tail)
     
     
+    def main(self, _run_: bool):
         
+        if _run_ == True:
+            
+            R = self.r()
+            T = self.t()
+            
+            R_abseloutValuePowerUp_2 = (abs( R ))**(2)
+            T_abseloutValuePowerUp_2 = (abs( T ))**(2)
+            
+            R_of_Landa = ( self.landa, R_abseloutValuePowerUp_2 )
+            T_of_Landa = ( self.landa, T_abseloutValuePowerUp_2)
         
+        return R_of_Landa, T_of_Landa
