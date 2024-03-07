@@ -1,4 +1,4 @@
 # Refractive-Index
 
 
->   from main import Light
+>   import main
