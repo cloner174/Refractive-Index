@@ -37,7 +37,7 @@ Finally, as the moment you create the object of the class, can see the result by
 
 ## Mistakes and Corrections
 
-To err is human, and nobody likes a perfect person! If you come across any mistakes or if you have questions, feel free to raise an issue or submit a pull request. Your contributions to improving the content are highly appreciated.
+To err is human, and nobody likes a perfect person! If you come across any mistakes or if you have questions, feel free to raise an issue or submit a pull request.
 
 
 
