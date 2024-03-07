@@ -1,3 +1,3 @@
 # Refractive-Index
 
-     >>> $ python -m pip install requirements.txt
+$    python -m pip install requirements.txt
