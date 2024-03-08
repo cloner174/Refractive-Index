@@ -45,3 +45,7 @@ fig.set_figheight(5)
 fig.set_figwidth(15)
 plt.plot(lambda_values, reflectance_valuesR)
 plt.show()
+
+fig, ax = plt.subplots()
+plt.plot(lambda_values, reflectance_valuesT)
+plt.show()
