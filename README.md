@@ -2,6 +2,7 @@
 
 
 
+
 ## Usage and How to Do that!
 
 To integrate the `Light` class and perform calculations, follow these steps:
