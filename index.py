@@ -3,7 +3,6 @@ from main import Light
 
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FormatStrFormatter
-import warnings
 import time
 
 step = 0.011 #input("Please insert the number for each STEP, here -->>   ")
@@ -41,7 +40,7 @@ time.sleep(2)
 print("\n An Example of numbers inside R_baseLambda) -->>  ", (R_baseLambda[111]))
 print("\n An Example of numbers inside T_baseLambda) -->>  ", (T_baseLambda[121]), "\n\n")
 time.sleep(3)
-warnings.warn("\n Please wait,, while we are setting up the plot !\n")
+print("\n\n Please wait,, while we are setting up the plot !\n\n")
 
 
 
