@@ -52,6 +52,6 @@ fig, ax = plt.subplots()
 ax.yaxis.set_major_formatter(FormatStrFormatter('%.17f'))
 fig.set_figheight(5)
 fig.set_figwidth(15)
-plt.plot(lambda_values, reflectance_valuesR)
+plt.plot(lambda_values, reflectance_values)
 
 plt.show()
