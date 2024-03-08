@@ -4,13 +4,13 @@
 
 ## Usage 
 
-$       git clone https://github.com/cloner174/Refractive-Index.git
+>>>$       git clone https://github.com/cloner174/Refractive-Index.git
 
-$       cd Refractive-Index
+>>>$       cd Refractive-Index
 
-$       python3 -m pip install requirements.txt
+>>>$       python3 -m pip install requirements.txt
 
-$       python3 index.py
+>>>$       python3 index.py
 
 
 
