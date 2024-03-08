@@ -2,7 +2,20 @@
 
 
 
-## Usage and How to Do that!
+## Usage 
+
+$       git clone https://github.com/cloner174/Refractive-Index.git
+
+$       cd Refractive-Index
+
+$       python3 -m pip install requirements.txt
+
+$       python3 index.py
+
+
+
+
+## How to Do same as that!
 
 To integrate the `Light` class and perform calculations, follow these steps:
 
