@@ -124,7 +124,7 @@ class Light:
         _tail1 = m[0,0] * self.gama0()
         _tail2 = m[0,1] * self.gama0() * self.gamma1()
         _tail3 = m[1,0]
-        _tail4 =  m[1,1] * self.gamma1()        
+        _tail4 =  m[1,1] * self.gamma1()     
         
         _tail = _tail1 + _tail2 + _tail3 + _tail4
         
@@ -145,12 +145,13 @@ class Light:
             
             R_of_Landa = ( self.landa, R_abseloutValuePowerUp_2 )
             T_of_Landa = ( self.landa, T_abseloutValuePowerUp_2)
+            
+            return R_of_Landa, T_of_Landa
         
         else:
             
-            R_of_Landa = R_abseloutValuePowerUp_2
-            T_of_Landa = T_abseloutValuePowerUp_2
+            return R_abseloutValuePowerUp_2, T_abseloutValuePowerUp_2
         
-        return R_of_Landa, T_of_Landa
+        
     
 #End-!-
