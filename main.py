@@ -23,7 +23,7 @@ class Light:
     
     def __init__(self, landa0: float, landa: float, i_: int = None):
         
-        self.landa0: landa0
+        self.landa0 = landa0
         self.landa = landa
         self.n1 = 2.5
         self.TeTa_i = 0
@@ -38,7 +38,7 @@ class Light:
     
     def L(self):
         
-        head_ = self.Epsilon0
+        head_ = self.landa0
         _tail = ( 4 )*( self.n1 )
         
         return head_ / _tail
