@@ -44,8 +44,15 @@ ax.yaxis.set_major_formatter(FormatStrFormatter('%.17f'))
 fig.set_figheight(5)
 fig.set_figwidth(15)
 plt.plot(lambda_values, reflectance_valuesR)
+nameHelper = Light.nameHelper
+plt.savefig(f'output/Fig_reflectBaseR_START{first}_ends{final}_id{nameHelper}.png')
 plt.show()
 
 fig, ax = plt.subplots()
+ax.yaxis.set_major_formatter(FormatStrFormatter('%.17f'))
+fig.set_figheight(5)
+fig.set_figwidth(15)
 plt.plot(lambda_values, reflectance_valuesT)
+nameHelper = Light.nameHelper
+plt.savefig(f'output/Fig_reflectBaseT_START{first}_ends{final}_id{nameHelper}.png')
 plt.show()

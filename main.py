@@ -131,6 +131,8 @@ class Light:
         return (head_ / _tail)
     
     
+    nameHelper = np.random.randint(1000)
+    
     def run(self, return_tuple_shape: bool = False):
         
         R = self.r()
