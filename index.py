@@ -6,7 +6,7 @@ from matplotlib.ticker import FormatStrFormatter
 
 
 
-step = 0.011 #input("Please insert the Total number of STEPS, here -->>   ")
+step = 0.011 #input("Please insert the number for each STEP, here -->>   ")
 first = 800  #input("Please insert the number for First step, here -->>   ")
 final = 2500  #input("Please insert the number of Final step, here -->>   ")
 
