@@ -79,25 +79,17 @@ class Light:
     
     
     
-    def M(self):
+    def _M(self, landa) :
+        k0 = (2 * np.pi) / landa
+        M = np.array( [[ np.cos(k0 * self.h()), -np.sin(k0 * self.h())],
+                            [np.sin(k0 * self.h()),np.cos(k0 * self.h())]])
         
-        m11 = cos( (self.k())*(self.h()) )
-        m12 = ( (self.i)*( sin( (self.k())*(self.h())) ) )/( self.gamma1() )
-        m21 = (self.i)*(self.gamma1())*( sin((self.k())*(self.h())) )
-        m22 = cos( (self.k())*(self.h()) )
-        
-        TransPose_Matrix = [
-            [m11, m12],
-            [m21, m22]
-        ]
-        
-        
-        return np.matrix(TransPose_Matrix)
+        return M
     
     
-    def r(self):
+    def r(self, landa):
         
-        m = self.M()
+        m = self._M(landa = landa)
         
         head_1 = m[0,0] * self.gama0()
         head_2 = m[0,1] * self.gama0() * self.gamma1()
@@ -115,9 +107,9 @@ class Light:
         return (head_ / _tail)
     
     
-    def t(self):
+    def t(self, landa):
         
-        m = self.M()
+        m = self._M(landa = landa)
         
         head_ = 2 * self.gama0()
         
@@ -133,10 +125,10 @@ class Light:
     
     nameHelper = np.random.randint(1000)
     
-    def run(self, return_tuple_shape: bool = False):
+    def run(self, landa, return_tuple_shape: bool = False):
         
-        R = self.r()
-        T = self.t()
+        R = self.r(landa = landa)
+        T = self.t(landa = landa)
             
         R_abseloutValuePowerUp_2 = (abs( R ))**(2)
         T_abseloutValuePowerUp_2 = (abs( T ))**(2)

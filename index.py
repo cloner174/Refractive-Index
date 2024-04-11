@@ -6,8 +6,8 @@ from matplotlib.ticker import FormatStrFormatter
 import warnings
 import time
 
-step = 0.011 #input("Please insert the number for each STEP, here -->>   ")
-first = 800  #input("Please insert the number for First step, here -->>   ")
+step = 11 #input("Please insert the number for each STEP, here -->>   ")
+first = 1  #input("Please insert the number for First step, here -->>   ")
 final = 2500  #input("Please insert the number of Final step, here -->>   ")
 
 total = int( (final - first) / step )
@@ -27,7 +27,7 @@ for d in range( total + 1):
     
     ReflectanceRT = Light(landa0= lambda0, landa= Landa_val)
     
-    R_Lambda, T_Lambda = ReflectanceRT.run()
+    R_Lambda, T_Lambda = ReflectanceRT.run(landa = Landa_val)
     
     R_baseLambda.append(R_Lambda)
     
@@ -45,23 +45,23 @@ warnings.warn("\n Please wait,, while we are setting up the plot !\n")
 
 
 
-fig, ax = plt.subplots()
-ax.xaxis.set_major_formatter(FormatStrFormatter('%.5f'))
-fig.set_figheight(5)
-fig.set_figwidth(15)
-plt.plot( (Lambda_vals, R_baseLambda ) )
+plt.figure(figsize=(10, 5))
+plt.plot( Lambda_vals, R_baseLambda)
+plt.plot( Lambda_vals, T_baseLambda )
 plt.xlabel('reflectBaseR')
 plt.ylabel('Lambda_Vals')
 plt.title('Plot R based on Lambda')
 nameHelper = Light.nameHelper
 plt.savefig(f'output/Fig_reflectBaseR_START{first}_ends{final}_id{nameHelper}.png')
+plt.legend()
 plt.show()
 
 fig, ax = plt.subplots()
 ax.xaxis.set_major_formatter(FormatStrFormatter('%.5f'))
 fig.set_figheight(5)
 fig.set_figwidth(15)
-plt.plot( (Lambda_vals, T_baseLambda ) )
+plt.plot( Lambda_vals, R_baseLambda)
+plt.plot( Lambda_vals, T_baseLambda  )
 plt.xlabel('reflectBaseT')
 plt.ylabel('Lambda_Vals')
 plt.title('Plot T based on Lambda')
