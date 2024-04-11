@@ -7,7 +7,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-class BraggReflector:
+class TwoLayerObject:
     
     def __init__(self, n0, nt, na, nb, landa0):
         self.n0 = n0  # Refractive index of air/initial medium
