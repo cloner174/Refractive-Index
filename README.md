@@ -23,12 +23,12 @@ To integrate the `Light` class and perform calculations, follow these steps:
 1. Create a new file, e.g., `index.py`, in the directory, and immediately add the following line as the first line of the code:
 
 ```python
->>>                  import main
+>>>   import main
 ```
   Or, Like I was done it:
 
 ```python
->>>                  from main import Light
+>>>   from main import Light
 ```
 
 
