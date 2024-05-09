@@ -35,8 +35,8 @@ To integrate the `Light` class and perform calculations, follow these steps:
 Now, You have access to Light class that can simply be call and modify by some line like this:
 
 ```python
->>>   Refelected_Values_RandT = Light( landa0 = < some number for start > , 
->>>                                    landa = < any other number to use for calculation R and T based on! > )
+>>>   Refelected_Values_RandT = Light( landa0 = # < some number for start > , 
+>>>                                    landa =  #< any other number to use for calculation R and T based on! > )
 
 ```
 Finally, As the moment you create the object of the class, can see the result by some command like:
